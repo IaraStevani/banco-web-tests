@@ -9,6 +9,7 @@ describe('Login', () => {
     cy.get('#username').click().type('julio.lima')
     cy.get('#senha').click().type('123456')
     cy.contains('button', 'Entrar').click()
+    cy.screenshot('login-efetuado')
 
     // Assert - verificação do teste
     cy.contains('h4', 'Realizar Transferência').should('be.visible')
@@ -20,6 +21,7 @@ describe('Login', () => {
     cy.get('#username').click().type('julio.lima')
     cy.get('#senha').click().type('54321')
     cy.contains('button', 'Entrar').click()
+    cy.screenshot('login-nao-efetuado')
 
     // Assert - verificação do teste
     cy.get('.toast').should('have.text', 'Erro no login. Tente novamente.')
