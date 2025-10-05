@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run", 
+    "test": "cypress run",
     "test-qa": "cypress run",
     "test-prod": "cypress run",
     "cy:headed": "cypress run --headed",
     "cy:open": "cypress open"
-
   },
   "repository": {
     "type": "git",
@@ -23,6 +22,7 @@
   },
   "homepage": "https://github.com/IaraStevani/banco-web-tests#readme",
   "devDependencies": {
-    "cypress": "^15.3.0"
+    "cypress": "^15.3.0",
+    "cypress-mochawesome-reporter": "^4.0.2"
   }
 }
